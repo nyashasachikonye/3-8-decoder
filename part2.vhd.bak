@@ -1,0 +1,36 @@
+LIBRARY altera;
+USE altera.maxplus2.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+entity parte2 is
+        port (input: in std_logic_vector(2 downto 0);
+        LEDS : out std_logic_vector(7 downto 0));
+    end parte2;
+
+    
+architecture behave of parte2 is
+begin
+process(input)
+begin
+
+if input="000" then
+	LEDS<="11111011";
+elsif input="001" then
+	LEDS<="00001000";
+elsif input="001" then
+	LEDS<="00001000";
+elsif input="001" then
+	LEDS<="00001000";
+elsif input="001" then
+	LEDS<="00001000";
+elsif input="001" then
+	LEDS<="00001000";
+elsif input="001" then
+	LEDS<="00001000";
+elsif input="001" then
+	LEDS<="00001000";
+end if;
+
+end process;
+end behave;
